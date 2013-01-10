@@ -13,7 +13,7 @@ alias lf="ls -l | egrep -v '^d'"
 alias ldir="ls -l | egrep '^d'"
 
 parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/-(\1)/'
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
 # set a fancy prompt (non-color, unless we know we "want" color)
@@ -31,5 +31,5 @@ color_prompt=
 fi
 fi
 
-PS1='\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;31m\]$(parse_git_branch)\[\033[00m\]\$ '
+PS1='\n\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;31m\]$(parse_git_branch)\[\033[00m\]\$'
 unset color_prompt force_color_prompt
