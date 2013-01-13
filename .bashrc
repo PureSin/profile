@@ -3,7 +3,6 @@ if [ -f /etc/bashrc ]; then
 . /etc/bashrc
 fi
 
-eval `ssh-agent -s`
 # User specific aliases and functions
 export JAVA_HOME=/usr/java/latest
 export PATH=$JAVA_HOME/bin:$PATH
