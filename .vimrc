@@ -1,0 +1,10 @@
+set tabstop=2
+set autoindent
+set shiftwidth=2
+set smarttab
+set expandtab
+set softtabstop=2
+set scrolloff=999
+set ignorecase
+set smartcase
+set incsearch 
