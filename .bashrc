@@ -7,9 +7,9 @@ fi
 export JAVA_HOME=/usr/java/latest
 export PATH=$JAVA_HOME/bin:$PATH
 
-alias ls='ls -l'
-alias lf="ls -l | egrep -v '^d'"
-alias ldir="ls -l | egrep '^d'"
+alias ls='ls -al'
+alias lf="ls -al | egrep -v '^d'"
+alias ldir="ls -al | egrep '^d'"
 
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
